@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".RulesGame">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/rulesLog"
+            android:textColor="#78C8E8"
+            android:textColorHighlight="#4A7575"
+            android:textSize="34sp"
+            tools:layout_editor_absoluteX="233dp"
+            tools:layout_editor_absoluteY="264dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
+            android:text="@string/rules1"
+            android:textColor="#FAD9B0"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="264dp"
+            tools:layout_editor_absoluteY="420dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
+            android:text="@string/rules2"
+            android:textColor="#FAD9B0"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/a1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="445dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/a2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="222dp"
+            tools:layout_editor_absoluteY="249dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/a5"
+            tools:layout_editor_absoluteX="222dp"
+            tools:layout_editor_absoluteY="445dp" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/a6"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="565dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

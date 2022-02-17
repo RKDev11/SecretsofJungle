@@ -61,7 +61,7 @@ public class Chill extends AppCompatActivity {
                 handlerSsetcerOefljgun.post(new Runnable() {
                     @Override
                     public void run() {
-                        if(startSsetcerOefljgun) {
+                        if (startSsetcerOefljgun) {
                             anim();
                             handlerSsetcerOefljgun.postDelayed(this::run, 3000);
                             handlerSsetcerOefljgun.post(new Runnable() {

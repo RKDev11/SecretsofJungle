@@ -17,6 +17,7 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
@@ -31,7 +32,6 @@ import java.io.IOException;
 
 public class SOJ extends AppCompatActivity {
     WebView inetViewSsetcerOefljgun;
-    public static String LOG = "MyInfo";
     public String trueThreeArraySsetcerOefljgun[];
     public String trueLinkOllSsetcerOefljgun;
     public String linkPrefSaveSsetcerOefljgun;
@@ -61,7 +61,7 @@ public class SOJ extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    kKkIdContextSsetcerOefljgun = AdvertisingIdClient.getAdvertisingIdInfo(getApplicationContext()).getId();
+                        kKkIdContextSsetcerOefljgun = AdvertisingIdClient.getAdvertisingIdInfo(getApplicationContext()).getId();
                 } catch (Exception e) {
                 }
             }
@@ -97,7 +97,7 @@ public class SOJ extends AppCompatActivity {
                             httPconect.MainMethod(trueOfferSsetcerOefljgun, trueZamokSsetcerOefljgun,
                                     dataFbKkkkSsetcerOefljgun, SOJ.this);
                         }
-                    }, 6000);
+                    }, 5000);
                 }
             } catch (Exception e) {
 

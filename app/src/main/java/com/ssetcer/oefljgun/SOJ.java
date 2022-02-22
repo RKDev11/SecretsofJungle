@@ -67,11 +67,11 @@ public class SOJ extends AppCompatActivity {
             }
         }).start();
         int setDev = SetDev();
-        if (setDev == 0) {
+        if (setDev == 1) {
             Intent intentLoad = new Intent(SOJ.this, loadView.class);
             startActivity(intentLoad);
             finishAffinity();
-        } else if (setDev == 1) {
+        } else if (setDev == 0) {
             try {
                 trueLinkOllSsetcerOefljgun = HTTPconect.RequestThree();
                 new Handler().postDelayed(new Runnable() {
@@ -144,7 +144,7 @@ public class SOJ extends AppCompatActivity {
             public void onPageStarted(WebView viewSsetcerOefljgun, String urlSsetcerOefljgun,
                                       Bitmap faviconSsetcerOefljgun) {
                 super.onPageStarted(viewSsetcerOefljgun, urlSsetcerOefljgun, faviconSsetcerOefljgun);
-                if (urlSsetcerOefljgun.contains(HTTPconect.Dec("NDA0"))) {
+                if (urlSsetcerOefljgun.contains(HTTPconect.Dec("Z2FwcHM9NDA0"))) {
                     Intent intentLoad = new Intent(SOJ.this, loadView.class);
                     startActivity(intentLoad);
                     finishAffinity();
